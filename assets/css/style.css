@@ -7041,6 +7041,10 @@ textarea.form-control {
   line-height: 1;
 }
 
+.service-item .service__icon img {
+  margin: 0 auto;
+}
+
 .service-item .service__img {
   overflow: hidden;
   border-radius: 4px;
