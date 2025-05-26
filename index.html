@@ -369,40 +369,76 @@
                     <div class="request__form-body">
                       <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                          <h5>Personal Data</h5>
-                        </div><!-- /.col-lg-12 -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
+                          <h5>Shipper's Information</h5>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                           <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="John">
+                            <label for="name-company">Company Name</label>
+                            <input type="text" name="name-company" id="name-company" class="form-control" placeholder="Apple inc.">
                           </div>
-                        </div><!-- /.col-lg-6 -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="form-group">
+                            <label for="name-contact">Contact Name</label>
+                            <input type="tel" name="name-contact" id="name-contact" class="form-control" placeholder="James">
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                           <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="john@company.com">
                           </div>
-                        </div><!-- /.col-lg-6 -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
                           <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="tel" class="form-control" placeholder="(647)">
+                            <label for="contact-tel">Contact Phone</label>
+                            <input type="tel" name="contact-tel" id="contact-tel" class="form-control" placeholder="(647)123-4567">
                           </div>
-                        </div><!-- /.col-lg-6 -->
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="address-origin">Origin Address</label>
+                            <input type="text" name="address-origin" id="address-origin" class="form-control" placeholder="1234 Yonge street">
+                          </div>
+                        </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
                           <h5 class="mt-5">Shipment Data</h5>
                         </div><!-- /.col-lg-12 -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                          <div class="form-group form-group-select">
-                            <select class="form-control">
-                              <option>Freight Type</option>
-                              <option>Freight Type 1</option>
-                              <option>Freight Type 2</option>
-                            </select>
+                        <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Urgent
+                              <input type="radio" name="radioGroup2" checked="">
+                              <span class="radio-indicator"></span>
+                            </label>
                           </div>
-                        </div><!-- /.col-lg-6 -->
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Direct
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Rush
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Same day
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                          <div class="form-group input-radio">
+                            <label class="label-radio">Overnight
+                              <input type="radio" name="radioGroup2">
+                              <span class="radio-indicator"></span>
+                            </label>
+                          </div>
+                        </div><!-- /.col-lg-12 -->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                           <div class="form-group">
+                            <label for="city">City</label>
                             <input type="email" class="form-control" placeholder="City of Departure" value="Toronto">
                           </div>
                         </div><!-- /.col-lg-6 -->
@@ -436,32 +472,6 @@
                             <input type="email" class="form-control" placeholder="Length">
                           </div>
                         </div><!-- /.col-lg-4 -->
-                        <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
-                          <div class="form-group input-radio">
-                            <label class="label-radio">Fragile
-                              <input type="radio" name="radioGroup2" checked="">
-                              <span class="radio-indicator"></span>
-                            </label>
-                          </div>
-                          <div class="form-group input-radio">
-                            <label class="label-radio">Express Delivery
-                              <input type="radio" name="radioGroup2">
-                              <span class="radio-indicator"></span>
-                            </label>
-                          </div>
-                          <div class="form-group input-radio">
-                            <label class="label-radio">Insurance
-                              <input type="radio" name="radioGroup2">
-                              <span class="radio-indicator"></span>
-                            </label>
-                          </div>
-                          <div class="form-group input-radio">
-                            <label class="label-radio">Packaging
-                              <input type="radio" name="radioGroup2">
-                              <span class="radio-indicator"></span>
-                            </label>
-                          </div>
-                        </div><!-- /.col-lg-12 -->
                         <div class="col-sm-12 col-md-12 col-lg-12">
                           <button class="btn btn__secondary btn__block">Request A Quote</button>
                         </div><!-- /.col-lg-12 -->
