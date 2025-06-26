@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hidden Field Example</title>
+  <script>
+    function updateHiddenField(event) {
+      // Prevent actual form submission for demonstration
+      event.preventDefault();
+
+      // Get the value of the visible input
+      const visibleValue = document.getElementById('visibleInput').value;
+
+      // Set it as the value of the hidden input
+      document.getElementById('hiddenInput').value = visibleValue;
+
+      // For demonstration, log it or you could submit the form here if needed
+      console.log("Hidden field updated to:", document.getElementById('hiddenInput').value);
+
+      // Uncomment to submit the form after update
+      // event.target.submit();
+    }
+  </script>
+</head>
+<body>
+
+  <form onsubmit="updateHiddenField(event)">
+    <label for="visibleInput">Enter something:</label>
+    <input type="text" id="visibleInput" name="visibleInput"><br><br>
+
+    <input type="hidden" id="hiddenInput" name="hiddenInput">
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
